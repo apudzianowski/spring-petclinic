@@ -1,6 +1,6 @@
 library 'libAG'
 pipeline {
-    agent none
+    agent any
     options {
         ansiColor('xterm')
     }
