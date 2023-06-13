@@ -5,7 +5,7 @@ pipeline {
         stage('Hello') {
             agent {label 'agent'}
             steps {
-                pipelineMaven(['skipTest':true])
+                pipelineMaven(['skipTest':true, 'skipInstall':true])
             }
         }
     }
