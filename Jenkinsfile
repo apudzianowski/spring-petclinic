@@ -1,5 +1,6 @@
 library 'libAG'
 pipeline {
+    timestamps {
     agent none
     options {
         ansiColor('xterm')
@@ -12,5 +13,6 @@ pipeline {
                 pipelineMaven(['skipTest':true, 'skipInstall':true])
             }
         }
+    }
     }
 }
